@@ -7,8 +7,21 @@ export function max(a, b) {
 
 // Exercise
 export function fizzBuzz(n) {
-  if (n % 3 === 0 && n % 5 === 0) return 'FizzBuzz';
-  if (n % 3 === 0) return 'Fizz';
-  if (n % 5 === 0) return 'Buzz';
+  if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz";
+  if (n % 3 === 0) return "Fizz";
+  if (n % 5 === 0) return "Buzz";
   return n.toString();
+}
+
+// Exercise : Average
+export function average(numbers) {
+  if (!numbers.length) return NaN;
+  return numbers.reduce((acc, curr) => acc + curr, 0) / numbers.length;
+}
+
+export function factorial(number) {
+  if (number === undefined || number === null) return NaN;
+  if (number < 0) return undefined;
+  if (number === 0) return 1;
+  else return number * factorial(number - 1);
 }
