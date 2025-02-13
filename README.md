@@ -14,6 +14,4 @@ This repository contains all of the examples and exercises for my JavaScript tes
 * Automate code quality checks with Husky to maintain high coding standards.
 
 
-You can find the full course at: 
-
 Reference : https://codewithmosh.com
